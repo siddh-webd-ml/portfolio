@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddh Agrawal | Portfolio</title>
+    <link rel="icon" href="/favicon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-blue-bg': '#0D1425',
+                        'card-bg': '#19253B',
+                        'neon-blue': '#00BFFF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark-blue-bg font-sans grid-bg text-white">
+
+    <header class="sticky top-0 z-50 bg-dark-blue-bg/90 backdrop-blur-sm border-b border-gray-700/50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="text-3xl font-bold">
+                &lt;<span class="text-neon-blue">Siddh</span>/&gt;
+            </a>
+            <button id="menu-button" class="md:hidden text-2xl p-2 text-white">
+                ☰
+            </button>
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="#about" class="hover:text-neon-blue transition">About</a>
+                <a href="#skills" class="hover:text-neon-blue transition">Skills</a>
+                <a href="#experience" class="hover:text-neon-blue transition">Experience</a>
+                <a href="#projects" class="hover:text-neon-blue transition">Projects</a>
+                <a href="#contact" class="hover:text-neon-blue transition">Contact</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-dark-blue-bg/95 border-t border-gray-700/50">
+            <a href="#about" class="block py-3 px-6 hover:bg-card-bg">About</a>
+            <a href="#skills" class="block py-3 px-6 hover:bg-card-bg">Skills</a>
+            <a href="#experience" class="block py-3 px-6 hover:bg-card-bg">Experience</a>
+            <a href="#projects" class="block py-3 px-6 hover:bg-card-bg">Projects</a>
+            <a href="#contact" class="block py-3 px-6 hover:bg-card-bg">Contact</a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+        <section id="about" class="py-16 px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-extrabold text-white mb-2">
+                    About <span class="text-neon-blue">Me</span>
+                </h2>
+                <div class="flex justify-center">
+                    <div class="h-1 w-20 bg-neon-blue rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="text-lg text-gray-300 space-y-4 mb-12">
+                <p>
+                    Hi! I'm **Siddh Agrawal**, a passionate **Frontend Developer and Data Analyst** from **Indore,
+                    India**. I specialize in creating intelligent, user-friendly systems that seamlessly blend
+                    creativity with cutting-edge technology.
+                </p>
+                <p>
+                    I am currently pursuing my **B.Tech in Computer Science** with a specialization in **AI & Machine
+                    Learning** at **RGPV**. My expertise spans across web development, AI-driven automation, and machine
+                    learning applications.
+                </p>
+            </div>
+
+            <div class="space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:gap-6">
+                <div class="col-span-1 space-y-2 text-gray-200">
+                    <p class="flex items-center"><span class="text-neon-blue mr-3">📍</span> Indore, India</p>
+                    <p class="flex items-center"><span class="text-neon-blue mr-3">🎓</span> B.Tech - CSE (AI & ML) at
+                        RGPV</p>
+                    <p class="flex items-center"><span class="text-neon-blue mr-3">💼</span> Frontend Developer & Data
+                        Analyst at Equadator</p>
+                </div>
+                <div class="col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 md:mt-0">
+                    <div class="bg-card-bg p-4 rounded-xl text-center shadow-lg">
+                        <span class="text-3xl text-neon-blue block mb-1">&lt;/&gt;</span>
+                        <p class="text-3xl font-bold">2+</p>
+                        <p class="text-sm text-gray-400">Years Experience</p>
+                    </div>
+                    <div class="bg-card-bg p-4 rounded-xl text-center shadow-lg">
+                        <span class="text-3xl text-neon-blue block mb-1">📂</span>
+                        <p class="text-3xl font-bold">5+</p>
+                        <p class="text-sm text-gray-400">Projects Completed</p>
+                    </div>
+                    <div class="bg-card-bg p-4 rounded-xl text-center shadow-lg">
+                        <span class="text-3xl text-neon-blue block mb-1">📜</span>
+                        <p class="text-3xl font-bold">10+</p>
+                        <p class="text-sm text-gray-400">Certifications</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-card-bg p-6 rounded-xl shadow-2xl">
+                <h3 class="text-xl font-semibold text-white mb-4">Interests & Focus Areas</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 text-sm rounded-full border border-neon-blue text-neon-blue">AI
+                        Automation</span>
+                    <span class="px-4 py-2 text-sm rounded-full border border-neon-blue text-neon-blue">Machine
+                        Learning</span>
+                    <span class="px-4 py-2 text-sm rounded-full border border-neon-blue text-neon-blue">Web
+                        Development</span>
+                    <span class="px-4 py-2 text-sm rounded-full border border-neon-blue text-neon-blue">Data
+                        Analysis</span>
+                    <span class="px-4 py-2 text-sm rounded-full border border-neon-blue text-neon-blue">Prompt
+                        Engineering</span>
+                    <span class="px-4 py-2 text-sm rounded-full border border-neon-blue text-neon-blue">Voice
+                        Assistants</span>
+                    <span class="px-4 py-2 text-sm rounded-full border border-neon-blue text-neon-blue">Web
+                        Scraping</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills" class="py-16 px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-2">
+                    Technical <span class="text-neon-blue">Skills</span>
+                </h2>
+                <div class="flex justify-center">
+                    <div class="h-1 w-20 bg-neon-blue rounded-full"></div>
+                </div>
+                <p class="text-gray-400 mt-4 text-lg max-w-lg mx-auto">
+                    A comprehensive overview of my technical expertise and competencies
+                </p>
+            </div>
+            <div class="space-y-8 max-w-2xl mx-auto">
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl">
+                    <h3 class="flex items-center text-xl font-semibold text-white mb-6">
+                        <span class="text-3xl text-neon-blue mr-3">&lt;/&gt;</span> Programming Languages
+                    </h3>
+                    <div class="space-y-5">
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">Python</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-neon-blue h-2 rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">JavaScript</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-neon-blue h-2 rounded-full" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">HTML/CSS</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-neon-blue h-2 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl">
+                    <h3 class="flex items-center text-xl font-semibold text-white mb-6">
+                        <span class="text-3xl text-green-400 mr-3">💾</span> Frameworks & Libraries
+                    </h3>
+                    <div class="space-y-5">
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">React</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-green-400 h-2 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">Tailwind CSS</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-green-400 h-2 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">NumPy/Pandas</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-green-400 h-2 rounded-full" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">BeautifulSoup</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-green-400 h-2 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl">
+                    <h3 class="flex items-center text-xl font-semibold text-white mb-6">
+                        <span class="text-3xl text-amber-400 mr-3">👥</span> Soft Skills
+                    </h3>
+                    <div class="space-y-5">
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">Adaptability</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-amber-400 h-2 rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">Multitasking</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-amber-400 h-2 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">Team Leadership</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-amber-400 h-2 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p class="text-gray-200 mb-1">Problem Solving</p>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="bg-amber-400 h-2 rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="experience" class="py-16 px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-2">
+                    Work <span class="text-neon-blue">Experience</span>
+                </h2>
+                <div class="flex justify-center">
+                    <div class="h-1 w-20 bg-neon-blue rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="bg-card-bg p-6 rounded-xl shadow-2xl max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold text-neon-blue mb-1">
+                    Frontend Developer & Data Analyst
+                </h3>
+                <p class="text-xl font-semibold text-white mb-4">Equadator</p>
+
+                <div class="flex items-center text-gray-400 mb-2">
+                    <span class="text-sm mr-2">📅</span> March 2024 - Present
+                </div>
+                <div class="flex items-center text-gray-400 mb-6">
+                    <span class="text-sm mr-2">📍</span> Bangalore (Remote)
+                </div>
+
+                <p class="text-xl font-semibold text-white mb-3">Key Responsibilities:</p>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-start">
+                        <span class="text-green-400 mr-3 mt-1">✔</span> Coordinated project tasks, ensuring adherence to
+                        engineering standards and regulations.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-400 mr-3 mt-1">✔</span> Collected and manipulated datasets using Python
+                        and applied machine learning techniques for data-driven insights.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-400 mr-3 mt-1">✔</span> Collaborated with cross-functional teams to
+                        deliver high-quality projects within strict deadlines.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-400 mr-3 mt-1">✔</span> Implemented AI-based features through prompt
+                        engineering and automation workflows, improving system efficiency and user experience.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-400 mr-3 mt-1">✔</span> Delivered a fully functional feature
+                        independently, enhancing the website's analytical and decision-making capabilities.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="py-16 px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-2">
+                    Leadership & <span class="text-neon-blue">Achievements</span>
+                </h2>
+                <div class="flex justify-center">
+                    <div class="h-1 w-20 bg-neon-blue rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="space-y-6 max-w-2xl mx-auto">
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl">
+                    <h3 class="flex items-center text-xl font-bold text-white mb-3">
+                        <span class="text-3xl text-neon-blue mr-3">👥</span> Team Leadership
+                    </h3>
+                    <p class="text-gray-300">
+                        Served as Team Leader at the Smart India Hackathon (SIH), leading a multidisciplinary team to
+                        design and implement innovative technology-driven solutions for real-world challenges. Oversaw
+                        project planning, task allocation, and presentation strategy.
+                    </p>
+                </div>
+
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl">
+                    <h3 class="flex items-center text-xl font-bold text-white mb-3">
+                        <span class="text-3xl text-green-400 mr-3">🏆</span> Hackathon Participation
+                    </h3>
+                    <p class="text-gray-300">
+                        Competed in CodeSpire, AI Manthan, and Smart India Hackathon (SIH), gaining hands-on experience
+                        collaborating with peers, managing time-sensitive deliverables, and building scalable
+                        prototypes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="py-16 px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-2">
+                    Featured <span class="text-neon-blue">Projects</span>
+                </h2>
+                <div class="flex justify-center">
+                    <div class="h-1 w-20 bg-neon-blue rounded-full"></div>
+                </div>
+                <p class="text-gray-400 mt-4 text-lg max-w-lg mx-auto">
+                    Showcasing my best work in AI automation and web development
+                </p>
+            </div>
+
+            <div class="space-y-8 max-w-2xl mx-auto">
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl space-y-6">
+                    <h3 class="text-3xl font-bold text-neon-blue">
+                        Turbo - Python Voice Assistant
+                    </h3>
+                    <p class="text-lg text-gray-300">
+                        Developed an intelligent desktop voice assistant that automates daily tasks through natural
+                        voice commands. Features system control, web search, app launching, messaging, and media
+                        playback.
+                    </p>
+
+                    <div class="space-y-3">
+                        <p class="text-sm font-semibold text-gray-400 uppercase tracking-widest">TECHNOLOGIES USED</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 text-sm rounded-full bg-cyan-800 text-white font-medium">Python</span>
+                            <span
+                                class="px-3 py-1 text-sm rounded-full bg-cyan-800 text-white font-medium">pyttsx3</span>
+                            <span
+                                class="px-3 py-1 text-sm rounded-full bg-cyan-800 text-white font-medium">OpenCV</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-600 text-white font-medium">NumPy</span>
+                            <span
+                                class="px-3 py-1 text-sm rounded-full bg-gray-600 text-white font-medium">Threading</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="https://github.com/siddh-webd-ml/Turbo-voice-assistant"
+                            class="flex items-center px-4 py-2 border-2 border-neon-blue text-neon-blue rounded-lg font-medium hover:bg-neon-blue/10 transition">
+                            <span class="mr-2">💡</span>View Code
+                        </a>
+                        <a href="https://github.com/siddh-webd-ml/Turbo-voice-assistant"
+                            class="flex items-center px-4 py-2 border-2 border-green-400 text-green-400 rounded-lg font-medium hover:bg-green-400/10 transition">
+                            <span class="mr-2">↗</span>Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl space-y-6">
+                    <h3 class="text-3xl font-bold text-green-400">
+                        RRR Calculator
+                    </h3>
+                    <p class="text-lg text-gray-300">
+                        Interactive web platform for real-time computations. Built efficient web
+                        scraping pipelines for data collection and processing.
+                    </p>
+                    <div class="space-y-3">
+                        <p class="text-sm font-semibold text-gray-400 uppercase tracking-widest">TECHNOLOGIES USED</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 text-sm rounded-full bg-cyan-800 text-white font-medium">Python</span>
+                            <span
+                                class="px-3 py-1 text-sm rounded-full bg-cyan-800 text-white font-medium">BeautifulSoup</span>
+                            <span
+                                class="px-3 py-1 text-sm rounded-full bg-cyan-800 text-white font-medium">BharatSM</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-600 text-white font-medium">HTML</span>
+                            <span class="px-3 py-1 text-sm rounded-full bg-gray-600 text-white font-medium">CSS</span>
+                            <span
+                                class="px-3 py-1 text-sm rounded-full bg-gray-600 text-white font-medium">Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="https://github.com/siddh-webd-ml/rrr-calculator"
+                            class="flex items-center px-4 py-2 border-2 border-neon-blue text-neon-blue rounded-lg font-medium hover:bg-neon-blue/10 transition">
+                            <span class="mr-2">💡</span>View Code
+                        </a>
+                        <a href="https://github.com/siddh-webd-ml/rrr-calculator"
+                            class="flex items-center px-4 py-2 border-2 border-green-400 text-green-400 rounded-lg font-medium hover:bg-green-400/10 transition">
+                            <span class="mr-2">↗</span>Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-16 px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-2">
+                    Certifications & <span class="text-neon-blue">Achievements</span>
+                </h2>
+                <div class="flex justify-center">
+                    <div class="h-1 w-20 bg-neon-blue rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="space-y-8 max-w-2xl mx-auto">
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl flex relative">
+                    <span class="text-4xl text-blue-400 mr-4">🏅</span>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-1">
+                            AI Prompt Engineering & Programming with AI
+                        </h3>
+                        <p class="text-gray-400">Columbia University</p>
+                        <p class="text-gray-500 text-sm mb-4">2024</p>
+                        <span class="inline-block px-3 py-1 text-sm rounded-full font-medium text-white bg-blue-600/70">
+                            Professional Certificate
+                        </span>
+                    </div>
+                    <a href="https://badges.plus.columbia.edu/57bd5878-7061-4684-8729-d082a9b4271f#acc.Ub6MJQRA" class="absolute top-4 right-4 text-gray-500 hover:text-white transition"><span
+                            class="text-xl">↗</span></a>
+                </div>
+
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl flex relative">
+                    <span class="text-4xl text-green-400 mr-4">🏅</span>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-1">CSS Skill Certification</h3>
+                        <p class="text-gray-400">HackerRank</p>
+                        <p class="text-gray-500 text-sm mb-4">2024</p>
+                        <span
+                            class="inline-block px-3 py-1 text-sm rounded-full font-medium text-white bg-green-600/70">
+                            Skill Verification
+                        </span>
+                    </div>
+                    <a href="https://www.hackerrank.com/certificates/c673d78b9c9f" class="absolute top-4 right-4 text-gray-500 hover:text-white transition"><span
+                            class="text-xl">↗</span></a>
+                </div>
+
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl flex relative">
+                    <span class="text-4xl text-purple-400 mr-4">🏅</span>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-1">Python Skill Certification</h3>
+                        <p class="text-gray-400">HackerRank</p>
+                        <p class="text-gray-500 text-sm mb-4">2024</p>
+                        <span
+                            class="inline-block px-3 py-1 text-sm rounded-full font-medium text-white bg-purple-600/70">
+                            Skill Verification
+                        </span>
+                    </div>
+                    <a href="https://www.hackerrank.com/certificates/7869d9272300" class="absolute top-4 right-4 text-gray-500 hover:text-white transition"><span
+                            class="text-xl">↗</span></a>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-card-bg p-6 rounded-xl shadow-2xl max-w-2xl mx-auto">
+                <h3 class="text-xl font-semibold text-neon-blue mb-4">Virtual Experience Programs</h3>
+                <ul class="space-y-3 text-lg text-gray-300">
+                    <li class="flex items-center"><span class="text-neon-blue mr-3">•</span> Data Analysis Virtual
+                        Experience</li>
+                    <li class="flex items-center"><span class="text-neon-blue mr-3">•</span> AI Applications Simulation
+                    </li>
+                    <li class="flex items-center"><span class="text-neon-blue mr-3">•</span> Frontend Development
+                        Training</li>
+                    <li class="flex items-center"><span class="text-neon-blue mr-3">•</span> Machine Learning Bootcamp
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="contact" class="py-16 px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white mb-2">
+                        Get In <span class="text-neon-blue">Touch</span>
+                    </h2>
+                    <div class="flex justify-center">
+                        <div class="h-1 w-20 bg-neon-blue rounded-full"></div>
+                    </div>
+                    <p class="text-gray-400 mt-4 text-lg">
+                        Have a project in mind or want to collaborate? Feel free to reach out!
+                    </p>
+                </div>
+
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold text-white mb-6">
+                        Contact <span class="text-neon-blue">Information</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-card-bg p-4 rounded-xl flex items-center shadow-lg">
+                            <span class="text-neon-blue text-2xl mr-4">📧</span>
+                            <div>
+                                <p class="text-gray-400 text-sm">Email</p>
+                                <p class="text-white font-medium">siddhagrawal92@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="bg-card-bg p-4 rounded-xl flex items-center shadow-lg">
+                            <span class="text-neon-blue text-2xl mr-4">📞</span>
+                            <div>
+                                <p class="text-gray-400 text-sm">Phone</p>
+                                <p class="text-white font-medium">+91 75820 70751</p>
+                            </div>
+                        </div>
+                        <div class="bg-card-bg p-4 rounded-xl flex items-center shadow-lg">
+                            <span class="text-neon-blue text-2xl mr-4">📍</span>
+                            <div>
+                                <p class="text-gray-400 text-sm">Location</p>
+                                <p class="text-white font-medium">Indore, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card-bg p-6 rounded-xl shadow-2xl">
+                    <h3 class="text-2xl font-semibold text-white mb-6">
+                        Send Me a <span class="text-neon-blue">Message</span>
+                    </h3>
+                    <form id="contactForm" class="space-y-6" action="https://formspree.io/f/mrbwkgop" method="POST">
+                        <div>
+                            <label for="name" class="block text-gray-200 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe"
+                                class="w-full bg-dark-blue-bg text-white border border-gray-600 rounded-lg p-3 focus:ring-neon-blue focus:border-neon-blue transition duration-200"
+                                required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-200 mb-1">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com"
+                                class="w-full bg-dark-blue-bg text-white border border-gray-600 rounded-lg p-3 focus:ring-neon-blue focus:border-neon-blue transition duration-200"
+                                required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-200 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Collaboration"
+                                class="w-full bg-dark-blue-bg text-white border border-gray-600 rounded-lg p-3 focus:ring-neon-blue focus:border-neon-blue transition duration-200"
+                                required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-200 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                                class="w-full bg-dark-blue-bg text-white border border-gray-600 rounded-lg p-3 focus:ring-neon-blue focus:border-neon-blue transition duration-200 resize-none"
+                                required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full flex items-center justify-center p-3 rounded-lg text-lg font-bold bg-neon-blue text-dark-blue-bg hover:bg-opacity-80 transition duration-300 shadow-xl shadow-neon-blue/40">
+                            <span class="mr-2">🚀</span>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-blue-bg pt-16 pb-8 px-4 border-t border-gray-700/50">
+        <div class="max-w-3xl mx-auto text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-3xl font-bold text-white mb-3">
+                        &lt;<span class="text-neon-blue">Siddh</span>/&gt;
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        Frontend Developer & Data Analyst specializing in AI-driven automation and machine learning.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-white mb-4">Quick Links</p>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-neon-blue transition">About</a></li>
+                        <li><a href="#skills" class="hover:text-neon-blue transition">Skills</a></li>
+                        <li><a href="#experience" class="hover:text-neon-blue transition">Experience</a></li>
+                        <li><a href="#projects" class="hover:text-neon-blue transition">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-neon-blue transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-white mb-4">Connect With Me</p>
+                    <div class="flex justify-center md:justify-start space-x-3">
+                        <a href="https://github.com/siddh-webd-ml" target="_blank"
+                            class="p-3 bg-card-bg rounded-lg text-white hover:text-neon-blue transition shadow-lg">
+                            <span class="text-xl">🛠️</span>
+                        </a>
+                        <a href="https://linkedin.com/in/siddh-agrawal-54214b343" target="_blank"
+                            class="p-3 bg-card-bg rounded-lg text-white hover:text-neon-blue transition shadow-lg">
+                            <span class="text-xl">🔗</span>
+                        </a>
+                        <a href="mailto:siddhagrawal92@gmail.com"
+                            class="p-3 bg-card-bg rounded-lg text-white hover:text-neon-blue transition shadow-lg">
+                            <span class="text-xl">✉️</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gray-700/50 text-center text-sm text-gray-500">
+                <p>&copy; 2025 Siddh Agrawal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

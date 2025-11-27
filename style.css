@@ -1,0 +1,26 @@
+/*
+ * Tailwind CSS Configuration and Custom Styles
+ *
+ * NOTE: When running a production build of Tailwind, you would typically 
+ * put the @tailwind directives here and use the CLI to process them.
+ * For this example, we rely on the CDN in index.html to load the framework,
+ * and we only define the custom colors and the grid background here.
+*/
+
+/* * 1. Tailwind Configuration (Injecting via CSS/JS config)
+ * * Since the CDN version is used in index.html, the configuration 
+ * for custom colors ('dark-blue-bg', 'neon-blue', 'card-bg') 
+ * is embedded in the <script> tag in the HTML file to ensure they are available.
+ * * If you were using a local Tailwind build (recommended for production), 
+ * this config would be in your tailwind.config.js file.
+*/
+
+/* * 2. Custom Styles
+*/
+
+/* Custom dark background pattern to match the design aesthetics */
+.grid-bg {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
