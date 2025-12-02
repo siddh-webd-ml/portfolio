@@ -1,26 +1,175 @@
-/*
- * Tailwind CSS Configuration and Custom Styles
- *
- * NOTE: When running a production build of Tailwind, you would typically 
- * put the @tailwind directives here and use the CLI to process them.
- * For this example, we rely on the CDN in index.html to load the framework,
- * and we only define the custom colors and the grid background here.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-/* * 1. Tailwind Configuration (Injecting via CSS/JS config)
- * * Since the CDN version is used in index.html, the configuration 
- * for custom colors ('dark-blue-bg', 'neon-blue', 'card-bg') 
- * is embedded in the <script> tag in the HTML file to ensure they are available.
- * * If you were using a local Tailwind build (recommended for production), 
- * this config would be in your tailwind.config.js file.
-*/
-
-/* * 2. Custom Styles
-*/
-
-/* Custom dark background pattern to match the design aesthetics */
 .grid-bg {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
                       linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 40px 40px;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slideInRight {
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+}
+
+
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.skill-bar {
+    transition: width 1.5s ease-out;
+}
+
+
+body.light-mode {
+    background-color: #f0f4f8;
+    color: #1a202c;
+}
+
+body.light-mode .grid-bg {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+body.light-mode header {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .bg-dark-blue-bg {
+    background-color: #f0f4f8;
+}
+
+body.light-mode .bg-card-bg {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .text-white {
+    color: #1a202c;
+}
+
+body.light-mode .text-gray-300,
+body.light-mode .text-gray-400 {
+    color: #4a5568;
+}
+
+body.light-mode .border-gray-700 {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode input,
+body.light-mode textarea {
+    background-color: #ffffff;
+    border-color: #cbd5e0;
+    color: #1a202c;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0D1425;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00BFFF;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0099cc;
 }
